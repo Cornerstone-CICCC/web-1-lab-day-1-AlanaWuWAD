@@ -2,3 +2,86 @@ main,
 footer {
   display: flex;
 }
+
+* {
+  box-sizing:border-box;
+}
+
+header {
+  margin-top: 10px;
+  background: #040e57;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;  /* 自動計算左右邊距，讓圖片水平置中 */
+  max-width: 100%; /* 防止圖片超出容器寬度 */
+  height: auto;    /* 保持圖片比例 */
+  position:relative;
+  align-items: center;
+}
+
+main {
+  background: #56e4e7;
+  
+}
+
+.sidebar {
+  background-color: yellow;
+}
+
+.content img{
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  background-size: cover;
+  object-fit: contain;
+  height: auto;
+  
+}
+
+#about+p {
+  background-color: black;
+  font-size: 14px;
+  color: white;
+}
+
+#services+p {
+  background-color: green;
+  font-size: 14px;
+  color: white;
+}
+
+#services~ ul {
+  list-style-type: circle; 
+}
+
+#services~ ul li:nth-child(even) {
+  color: red; 
+}
+
+#contact~ ul li a{
+  color: red;
+}
+
+footer div:nth-child(1) p {
+  background-color: pink;
+  margin-top: 0;
+  border-top: 15px solid pink;
+  border-bottom: 15px solid pink;
+}
+
+footer div:nth-child(2) p {
+  background-color: red;
+  color: white;
+  margin-top: 0;
+  border-top: 15px solid red;
+  border-bottom: 15px solid red;
+}
+
+footer div:nth-child(3) p {
+  background-color: grey;
+  margin-top: 0;
+  border-top: 15px solid grey;
+  border-bottom: 15px solid grey;
+}
